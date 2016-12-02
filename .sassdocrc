@@ -1,0 +1,15 @@
+basePath: "https://github.com/yairodriguez/gridmovies"
+dest: "docs"
+display:
+  access: ["private", "public"]
+  alias: true
+  watermark: true
+package:
+  title: "Grid Movies Docs"
+  name: "GridMovies-docs"
+  version: "0.1.0"
+  license: "MIT"
+  homepage: "gridmovies.cool"
+theme: "neat"
+groups:
+  undefined: Ungrouped
