@@ -1,0 +1,31 @@
+{
+  "name": "gridmovies",
+  "version": "1.0.0",
+  "description": "Grid Movie Posters in HTML and CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass-lint --config .scss-lint.yml --verbose --no-exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yairodriguez/gridmovies.git"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "Sass",
+    "Gulp",
+    "Movie",
+    "Posters."
+  ],
+  "author": "Yair Rodriguez <@imyairodriguez>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yairodriguez/gridmovies/issues"
+  },
+  "homepage": "https://github.com/yairodriguez/gridmovies#readme",
+  "devDependencies": {
+    "node-sass": "^3.13.0",
+    "sass-lint": "^1.10.2"
+  }
+}
