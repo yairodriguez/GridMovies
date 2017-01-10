@@ -1,7 +1,9 @@
 @import 'true';
 
 @import '../../app/styles/functions/color.white';
+@import '../../app/styles/functions/color.black';
 
 @import './white.spec';
+@import './black.spec';
 
 @include report;
