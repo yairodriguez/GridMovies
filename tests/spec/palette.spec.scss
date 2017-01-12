@@ -3,14 +3,14 @@
 @include test-module('Sass :: palette function') {
   @include test('Should return the appropiate HEX value from $palette slate-gray property') {
     $actual: palette(slate-gray);
-    $expected: #6F7C8E;
+    $expected: #707D90;
 
     @include assert-equal($actual, $expected);
   };
 
   @include test('Should return the appropiate HEX value from $palette outer-space property') {
     $actual: palette(outer-space);
-    $expected: #212C30;
+    $expected: #293239;
 
     @include assert-equal($actual, $expected);
   };
