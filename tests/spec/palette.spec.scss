@@ -10,7 +10,7 @@
 
   @include test('Should return the appropiate HEX value from $palette outer-space property') {
     $actual: palette(outer-space);
-    $expected: #293239;
+    $expected: #2B3239;
 
     @include assert-equal($actual, $expected);
   };
