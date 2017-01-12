@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  background-color: palette(cinder);
+  font-family: 'p22-underground';
+  font-style: normal;
+  height: 100%;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
