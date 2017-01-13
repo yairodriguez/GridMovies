@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+.movie {
+  background-color: black(1);
+  margin: 0 auto;
+  max-width: 580px;
+  padding: 40px 0;
+
+  @media screen and (min-width: 375px) {
+    padding: 100px 0 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 200px 0 40px;
+  }
+}
+
+.movie + .movie {
+  margin-top: 20px;
+}
+
+figcaption {
+  margin-top: 70px;
+
+  @media screen and (min-width: 375px) {
+    margin-top: 100px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 165px;
+  }
+}

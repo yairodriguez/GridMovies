@@ -1,3 +1,14 @@
-body {
-  margin: 0;
-}
+@charset 'utf-8';
+
+@import 'theme/palette';
+
+@import 'functions/color.white';
+@import 'functions/color.black';
+@import 'functions/palette';
+
+@import 'theme/setup';
+
+@import 'components/layout/movie';
+@import 'components/credits';
+
+@import 'components/poster/starwars-iv';

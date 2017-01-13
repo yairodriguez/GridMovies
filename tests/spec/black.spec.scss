@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+@include test-module('Sass :: color.black') {
+  @include test('Should return the appropiate black rgba value with $opacity') {
+    $actual: black(0.9);
+    $expected: rgba(0, 0, 0, 0.9);
+
+    @include assert-equal($actual, $expected);
+  };
+};

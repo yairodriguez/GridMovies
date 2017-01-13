@@ -1,0 +1,42 @@
+@charset 'utf-8';
+
+.starwars-iv {
+  background: linear-gradient(to left top, darken(palette(outer-space), 10%), palette(slate-gray));
+  border-radius: 50%;
+  height: 330px;
+  margin: 0 auto;
+  max-width: 330px;
+  padding: 14px;
+  position: relative;
+  transform: scale(0.9);
+
+  @media screen and (min-width: 375px) {
+    transform: scale(1);
+  }
+
+  &::before,
+  &::after {
+    background-color: black(1);
+    content: '';
+    display: block;
+    height: 151px;
+    width: 100%;
+  }
+
+  &::before {
+    border-radius: 151px 151px 0 0;
+  }
+
+  &::after {
+    border-radius: 0 0 151px 151px;
+  }
+}
+
+.line {
+  background: linear-gradient(to right, palette(shuttle-gray), palette(outer-space));
+  height: 14px;
+  left: 12px;
+  position: absolute;
+  top: calc(50% - 7px);
+  width: calc(100% - 24px);
+}

@@ -1,0 +1,5 @@
+@charset 'utf-8';
+
+@function black($opacity: 1) {
+  @return rgba(0, 0, 0, $opacity);
+}

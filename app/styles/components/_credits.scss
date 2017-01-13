@@ -1,0 +1,57 @@
+@charset 'utf-8';
+
+.credits,
+.poster__title {
+  color: palette(gold); // sass-lint:disable-line no-color-keywords, no-color-literals
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.poster__title {
+  font-size: 18px;
+  letter-spacing: 6px;
+}
+
+.credits {
+  &__copy {
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  &__legend,
+  &__year {
+    font-size: 7px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+
+  &__year {
+    display: inline-block;
+    margin-top: 3px;
+    position: relative;
+    text-align: center;
+    width: auto;
+
+    &::before,
+    &::after {
+      background-color: currentColor;
+      content: '';
+      display: inline-block;
+      height: 1px;
+      position: absolute;
+      top: 3px;
+      width: 2px;
+    }
+
+    &::before {
+      left: -4px;
+    }
+
+    &::after {
+      right: -4px;
+    }
+  }
+}
