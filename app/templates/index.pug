@@ -1,13 +1,28 @@
 doctype html
-html
+html(itemscope, itemtype='http://schema.org/Website', itemid='http://posters.wtf')
   head
-    title Grid Movies
+    meta(charset='utf-8')
+    title Movies Posters
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
     meta(name='viewport', content='width=device-width,minimum-scale=1,initial-scale=1')
+    meta(name='mobile-web-app-capable', content='yes')
     link(rel='stylesheet', href='https://necolas.github.io/normalize.css/5.0.0/normalize.css')
     link(rel='stylesheet', href='styles/gridmovies.css')
     script(src='https://use.typekit.net/cxl6bnr.js')
     script.
       try{Typekit.load({ async: true });}catch(e){}
+    style.
+      #WebsitePublisher {
+        display: none;
+      }
+    include ./layout/tags
   body
+    nav.nav
+      a(role='history', href='about.html') Wait, what?
+    #WebsitePublisher(itemprop='publisher', itemtype='http://schema.org/Organization' itemscope='')
+      em(itemprop='name') Yair Rodriguez
+      figure(itemprop='logo', itemscope, itemtype='https://schema.org/ImageObject')
+        img(itemprop='url', src='http://posters.wtf/images/logo.png', alt='Movie Posters Website Cover')
+        meta(itemprop='width', content='980')
+        meta(itemprop='height', content='980')
     include ./components/starwars-iv
