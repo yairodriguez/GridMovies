@@ -151,7 +151,7 @@ gulp.task('sass', () => {
  */
 gulp.task('html', ['pug', 'sass'], () => {
   return gulp
-    .src('.tmp/**/*.html')
+    .src('.tmp/**/*.*')
     .pipe($.useref({ searchPath: '.tmp' }))
     .pipe($.if('*.css', $.cleanCss()))
     .pipe($.if('*.html', $.htmlmin({ collapseWhitespace: true })))
