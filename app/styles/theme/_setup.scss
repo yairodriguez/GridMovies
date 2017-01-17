@@ -8,11 +8,15 @@
   }
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: palette(cinder);
   font-family: 'p22-underground';
   font-style: normal;
-  height: 100%;
   line-height: 1;
   margin: 0;
   padding: 0;

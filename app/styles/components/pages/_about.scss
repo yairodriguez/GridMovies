@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+.about__copy {
+  color: palette(gold); // sass-lint:disable-line no-color-keywords, no-color-literals
+  font-family: 'adobe-caslon-pro';
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 420px;
+  padding: 35px;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+
+  a {
+    color: white(1);
+  }
+
+  p {
+    margin: 0 0 15px;
+  }
+}
