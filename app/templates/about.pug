@@ -1,0 +1,32 @@
+doctype html
+html(itemscope, itemtype='http://schema.org/Website', itemid='http://posters.wtf')
+  head
+    meta(charset='utf-8')
+    title Movies Posters | About
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='viewport', content='width=device-width,minimum-scale=1,initial-scale=1')
+    meta(name='mobile-web-app-capable', content='yes')
+    link(rel='stylesheet', href='https://necolas.github.io/normalize.css/5.0.0/normalize.css')
+    link(rel='stylesheet', href='styles/gridmovies.css')
+    script(src='https://use.typekit.net/cxl6bnr.js')
+    script.
+      try{Typekit.load({ async: true });}catch(e){}
+    style.
+      #WebsitePublisher {
+        display: none;
+      }
+    include ./layout/icons
+    include ./layout/tags
+  body
+    nav.nav
+      a(role='history', href='index.html') Go back
+    #WebsitePublisher(itemprop='publisher', itemtype='http://schema.org/Organization' itemscope='')
+      em(itemprop='name') Yair Rodriguez
+      figure(itemprop='logo', itemscope, itemtype='https://schema.org/ImageObject')
+        img(itemprop='url', src='http://posters.wtf/images/logo.png', alt='Movie Posters Website Cover')
+        meta(itemprop='width', content='980')
+        meta(itemprop='height', content='980')
+    section.about__copy
+      p I built all posters with only HTML and CSS. Pretty crazy ha!
+      p I spend part of my time making things like this, running illustrations, designing websites. This is heavily inspired by #[a(href='https://www.behance.net/gallery/7850165/Grid-Movie-Posters', target='_blank') Grid Movie Posters], a project who was featured on #[a(href='https://www.behance.net', target='_blank') Behance].
+      p Like it? I’m looking for a job. <br /> #[a(href='http://twitter.com/imyairodriguez') @imyairodriguez]
